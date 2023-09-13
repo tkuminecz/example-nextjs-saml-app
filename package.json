@@ -1,0 +1,26 @@
+{
+  "name": "example-nextjs-saml-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "next lint",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Tim Kuminecz <tim@kuminecz.com>",
+  "license": "MIT",
+  "dependencies": {
+    "next": "~13.4.19",
+    "react": "~18.2.0",
+    "react-dom": "~18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "~20.6.0",
+    "@types/react": "18.2.21",
+    "typescript": "~5.2.2"
+  }
+}
