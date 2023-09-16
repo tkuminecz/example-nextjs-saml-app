@@ -1,2 +1,4 @@
+.certs
+.env
 .next
 node_modules

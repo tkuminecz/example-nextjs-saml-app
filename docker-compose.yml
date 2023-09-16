@@ -1,0 +1,14 @@
+version: "3"
+services:
+  test-saml-idp:
+    image: kristophjunge/test-saml-idp:1.15
+    environment:
+      SIMPLESAMLPHP_SP_ENTITY_ID: test-nextjs-saml-app
+      SIMPLESAMLPHP_SP_ASSERTION_CONSUMER_SERVICE: https://3000-tkuminecz-examplenextjs-swr5rxjopru.ws-us104.gitpod.io/saml/acs
+      SIMPLESAMLPHP_SP_SINGLE_SIGNON_SERVICE: https://3000-tkuminecz-examplenextjs-swr5rxjopru.ws-us104.gitpod.io/saml/login
+      SIMPLESAMLPHP_SP_SINGLE_LOGOUT_SERVICE: https://3000-tkuminecz-examplenextjs-swr5rxjopru.ws-us104.gitpod.io/saml/sso/logout
+    volumes:
+      - ./simplesaml-config.php:/var/www/simplesamlphp/metadata/saml20-sp-remote.php
+    ports:
+      - 8080:8080
+      - 8443:8443
